@@ -13,7 +13,7 @@ function App() {
       setIsVisible(true);
 
       // Intersection Observer for section tracking
-      const sections = ["home", "about", "skills", "projects", "contact"];
+      const sections = ["home", "about", "education", "skills", "projects", "contact"];
       const observers = sections.map((sectionId) => {
         const element = document.getElementById(sectionId);
         if (element) {
@@ -84,6 +84,15 @@ function App() {
             </li>
             <li>
               <a
+                href="#education"
+                onClick={() => scrollToSection("education")}
+                className={activeSection === "education" ? "active" : ""}
+              >
+                Education
+              </a>
+            </li>
+            <li>
+              <a
                 href="#skills"
                 onClick={() => scrollToSection("skills")}
                 className={activeSection === "skills" ? "active" : ""}
@@ -123,11 +132,10 @@ function App() {
               <span className="gradient-text">Godwin</span>
             </h1>
             <p className="hero-subtitle">
-              Full Stack Developer & UI/UX Designer
+              Computer Science Student & Aspiring Developer
             </p>
             <p className="hero-description">
-              Passionate about creating beautiful, functional web applications
-              with modern technologies
+              3rd Year Computer Science student at University of Birmingham, passionate about learning and building innovative web applications
             </p>
             <div className="hero-buttons">
               <button
@@ -161,27 +169,58 @@ function App() {
           <div className="about-content">
             <div className="about-text">
               <p>
-                I'm a passionate Full Stack Developer with a strong background
-                in modern web technologies. I enjoy creating seamless user
-                experiences and robust backend solutions.
+                I'm a 3rd year Computer Science student at the University of Birmingham, 
+                passionate about software development and technology. Through my studies and 
+                personal projects, I've been exploring web development, programming languages, 
+                and software engineering principles.
               </p>
               <p>
-                With expertise in React, Node.js, and various databases, I bring
-                ideas to life through clean, efficient code and thoughtful
-                design.
+                I enjoy learning new technologies and applying theoretical knowledge to practical 
+                projects. I'm particularly interested in full-stack development and creating 
+                user-friendly applications that solve real-world problems.
               </p>
               <div className="stats">
                 <div className="stat-item">
-                  <span className="stat-number">2+</span>
-                  <span className="stat-label">Years Experience</span>
+                  <span className="stat-number">3rd</span>
+                  <span className="stat-label">Year Student</span>
                 </div>
                 <div className="stat-item">
-                  <span className="stat-number">20+</span>
-                  <span className="stat-label">Projects Completed</span>
+                  <span className="stat-number">15+</span>
+                  <span className="stat-label">Academic Projects</span>
                 </div>
                 <div className="stat-item">
-                  <span className="stat-number">100%</span>
-                  <span className="stat-label">Client Satisfaction</span>
+                  <span className="stat-number">UoB</span>
+                  <span className="stat-label">Computer Science</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Education Section */}
+      <section id="education" className="education">
+        <div className="container">
+          <h2 className="section-title">Education</h2>
+          <div className="education-content">
+            <div className="education-item">
+              <div className="education-header">
+                <h3>BSc Computer Science</h3>
+                <span className="education-period">2022 - 2025 (Expected)</span>
+              </div>
+              <div className="education-details">
+                <p className="education-institution">University of Birmingham</p>
+                <p className="education-description">
+                  Currently in my 3rd year studying Computer Science with a focus on software engineering, 
+                  algorithms, data structures, and web development. Relevant coursework includes:
+                </p>
+                <div className="coursework">
+                  <span className="course-tag">Data Structures & Algorithms</span>
+                  <span className="course-tag">Software Engineering</span>
+                  <span className="course-tag">Database Systems</span>
+                  <span className="course-tag">Web Development</span>
+                  <span className="course-tag">Object-Oriented Programming</span>
+                  <span className="course-tag">Computer Networks</span>
                 </div>
               </div>
             </div>
@@ -192,39 +231,39 @@ function App() {
       {/* Skills Section */}
       <section id="skills" className="skills">
         <div className="container">
-          <h2 className="section-title">Skills & Technologies</h2>
+          <h2 className="section-title">Technical Skills</h2>
           <div className="skills-grid">
             <div className="skill-category">
-              <h3>Frontend</h3>
+              <h3>Programming Languages</h3>
               <div className="skill-items">
-                <span className="skill-tag">React</span>
+                <span className="skill-tag">Java</span>
                 <span className="skill-tag">JavaScript</span>
-                <span className="skill-tag">TypeScript</span>
+                <span className="skill-tag">Python</span>
                 <span className="skill-tag">HTML5</span>
                 <span className="skill-tag">CSS3</span>
-                <span className="skill-tag">Sass</span>
+                <span className="skill-tag">C</span>
               </div>
             </div>
             <div className="skill-category">
-              <h3>Backend</h3>
+              <h3>Frameworks & Technologies</h3>
               <div className="skill-items">
+                <span className="skill-tag">React</span>
                 <span className="skill-tag">Node.js</span>
-                <span className="skill-tag">Express</span>
-                <span className="skill-tag">Python</span>
+                <span className="skill-tag">Git</span>
+                <span className="skill-tag">MySQL</span>
                 <span className="skill-tag">MongoDB</span>
-                <span className="skill-tag">PostgreSQL</span>
                 <span className="skill-tag">REST APIs</span>
               </div>
             </div>
             <div className="skill-category">
-              <h3>Tools & Others</h3>
+              <h3>Currently Learning</h3>
               <div className="skill-items">
-                <span className="skill-tag">Git</span>
+                <span className="skill-tag">TypeScript</span>
+                <span className="skill-tag">Express.js</span>
                 <span className="skill-tag">Docker</span>
                 <span className="skill-tag">AWS</span>
-                <span className="skill-tag">Figma</span>
-                <span className="skill-tag">Photoshop</span>
-                <span className="skill-tag">Agile</span>
+                <span className="skill-tag">Machine Learning</span>
+                <span className="skill-tag">Spring Boot</span>
               </div>
             </div>
           </div>
@@ -234,25 +273,25 @@ function App() {
       {/* Projects Section */}
       <section id="projects" className="projects">
         <div className="container">
-          <h2 className="section-title">Featured Projects</h2>
+          <h2 className="section-title">Academic & Personal Projects</h2>
           <div className="projects-grid">
             <div className="project-card">
               <div className="project-image">
                 <div className="project-placeholder">
-                  <span>E-Commerce Platform</span>
+                  <span>Portfolio Website</span>
                 </div>
               </div>
               <div className="project-content">
-                <h3>E-Commerce Platform</h3>
+                <h3>Personal Portfolio Website</h3>
                 <p>
-                  Full-stack e-commerce solution with React, Node.js, and
-                  MongoDB. Features include user authentication, payment
-                  integration, and admin dashboard.
+                  A responsive portfolio website built with React and modern CSS. 
+                  Features include smooth animations, particle background effects, 
+                  and a clean, professional design.
                 </p>
                 <div className="project-tech">
                   <span>React</span>
-                  <span>Node.js</span>
-                  <span>MongoDB</span>
+                  <span>CSS3</span>
+                  <span>JavaScript</span>
                 </div>
                 <div className="project-links">
                   <a href="#" className="project-link">
@@ -268,24 +307,24 @@ function App() {
             <div className="project-card">
               <div className="project-image">
                 <div className="project-placeholder">
-                  <span>Task Management App</span>
+                  <span>University Project</span>
                 </div>
               </div>
               <div className="project-content">
-                <h3>Task Management App</h3>
+                <h3>Data Structures Implementation</h3>
                 <p>
-                  Collaborative task management application with real-time
-                  updates, drag-and-drop functionality, and team collaboration
-                  features.
+                  Academic project implementing various data structures and algorithms 
+                  in Java. Includes binary trees, hash tables, and sorting algorithms 
+                  with performance analysis.
                 </p>
                 <div className="project-tech">
-                  <span>React</span>
-                  <span>Socket.io</span>
-                  <span>Express</span>
+                  <span>Java</span>
+                  <span>Algorithms</span>
+                  <span>Data Structures</span>
                 </div>
                 <div className="project-links">
                   <a href="#" className="project-link">
-                    Live Demo
+                    Report
                   </a>
                   <a href="#" className="project-link">
                     GitHub
@@ -297,18 +336,19 @@ function App() {
             <div className="project-card">
               <div className="project-image">
                 <div className="project-placeholder">
-                  <span>Weather Dashboard</span>
+                  <span>Learning Project</span>
                 </div>
               </div>
               <div className="project-content">
-                <h3>Weather Dashboard</h3>
+                <h3>To-Do List Application</h3>
                 <p>
-                  Interactive weather application with location-based forecasts,
-                  beautiful visualizations, and responsive design.
+                  A simple yet functional to-do list application built while learning 
+                  React. Features include local storage, task filtering, and a 
+                  responsive design.
                 </p>
                 <div className="project-tech">
                   <span>React</span>
-                  <span>API Integration</span>
+                  <span>Local Storage</span>
                   <span>CSS3</span>
                 </div>
                 <div className="project-links">
@@ -331,10 +371,11 @@ function App() {
           <h2 className="section-title">Get In Touch</h2>
           <div className="contact-content">
             <div className="contact-info">
-              <h3>Let's work together</h3>
+              <h3>Let's connect!</h3>
               <p>
-                I'm always interested in new opportunities and exciting
-                projects. Feel free to reach out!
+                I'm always eager to learn from others and discuss technology, 
+                programming, or potential collaboration opportunities. Feel free 
+                to reach out if you'd like to connect!
               </p>
               <div className="contact-links">
                 <a
