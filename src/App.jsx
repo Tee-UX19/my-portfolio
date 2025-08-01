@@ -182,6 +182,13 @@ function App() {
             </div>
           </div>
           <div className="hero-visual">
+            <div className="profile-photo-container">
+              <img
+                src="/images/profile/profile-photo.jpg"
+                alt="Timothy Joseph Godwin"
+                className="profile-photo"
+              />
+            </div>
             <div className="floating-shapes">
               <div className="shape shape-1"></div>
               <div className="shape shape-2"></div>
