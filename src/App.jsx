@@ -139,11 +139,12 @@ function App() {
               <span className="gradient-text">Godwin</span>
             </h1>
             <p className="hero-subtitle">
-              Computer Science Student & Aspiring Developer
+              Computer Science Student & Aspiring Software Engineer
             </p>
             <p className="hero-description">
-              3rd Year Computer Science student at University of Birmingham,
-              passionate about learning and building innovative web applications
+              M.Eng Computer Science student at University of Birmingham,
+              passionate about software engineering and building innovative
+              applications
             </p>
             <div className="hero-buttons">
               <button
@@ -177,30 +178,30 @@ function App() {
           <div className="about-content">
             <div className="about-text">
               <p>
-                I'm a 3rd year Computer Science student at the University of
-                Birmingham, passionate about software development and
-                technology. Through my studies and personal projects, I've been
-                exploring web development, programming languages, and software
-                engineering principles.
+                I'm pursuing an M.Eng in Computer Science with Software
+                Engineering at the University of Birmingham, having achieved a
+                72% in my first year. My journey includes international study
+                experiences and strong academic foundations in mathematics and
+                sciences.
               </p>
               <p>
                 I enjoy learning new technologies and applying theoretical
                 knowledge to practical projects. I'm particularly interested in
-                full-stack development and creating user-friendly applications
-                that solve real-world problems.
+                full-stack development, artificial intelligence, and creating
+                user-friendly applications that solve real-world problems.
               </p>
               <div className="stats">
                 <div className="stat-item">
-                  <span className="stat-number">3rd</span>
-                  <span className="stat-label">Year Student</span>
+                  <span className="stat-number">72%</span>
+                  <span className="stat-label">Year 1 Average</span>
                 </div>
                 <div className="stat-item">
-                  <span className="stat-number">15+</span>
-                  <span className="stat-label">Academic Projects</span>
-                </div>
-                <div className="stat-item">
-                  <span className="stat-number">UoB</span>
+                  <span className="stat-number">M.Eng</span>
                   <span className="stat-label">Computer Science</span>
+                </div>
+                <div className="stat-item">
+                  <span className="stat-number">97th</span>
+                  <span className="stat-label">SAT Percentile</span>
                 </div>
               </div>
             </div>
@@ -215,29 +216,76 @@ function App() {
           <div className="education-content">
             <div className="education-item">
               <div className="education-header">
-                <h3>BSc Computer Science</h3>
-                <span className="education-period">2022 - 2025 (Expected)</span>
+                <h3>M.Eng Computer Science with Software Engineering</h3>
+                <span className="education-period">2023 - Present</span>
               </div>
               <div className="education-details">
                 <p className="education-institution">
                   University of Birmingham
                 </p>
+                <div className="education-achievement">
+                  <span className="grade-highlight">
+                    Expected First Class • Year 1: 72%
+                  </span>
+                </div>
                 <p className="education-description">
-                  Currently in my 3rd year studying Computer Science with a
-                  focus on software engineering, algorithms, data structures,
-                  and web development. Relevant coursework includes:
+                  Master of Engineering programme combining theoretical computer
+                  science with practical software engineering applications.
                 </p>
                 <div className="coursework">
+                  <span className="course-tag">Full Stack App Development</span>
                   <span className="course-tag">
-                    Data Structures & Algorithms
+                    Object Oriented Programming
                   </span>
+                  <span className="course-tag">Data Structures</span>
                   <span className="course-tag">Software Engineering</span>
-                  <span className="course-tag">Database Systems</span>
-                  <span className="course-tag">Web Development</span>
-                  <span className="course-tag">
-                    Object-Oriented Programming
+                  <span className="course-tag">Functional Programming</span>
+                  <span className="course-tag">Artificial Intelligence</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="education-item">
+              <div className="education-header">
+                <h3>Foundation Certificate in Science and Engineering</h3>
+                <span className="education-period">2023</span>
+              </div>
+              <div className="education-details">
+                <p className="education-institution">
+                  Kaplan International College, London
+                </p>
+                <div className="education-achievement">
+                  <span className="grade-highlight">
+                    Mathematics: 90% • IT: 88% • Extended Project: 72%
                   </span>
-                  <span className="course-tag">Computer Networks</span>
+                </div>
+                <p className="education-description">
+                  Preparatory programme providing foundation knowledge for
+                  engineering and computer science studies.
+                </p>
+              </div>
+            </div>
+
+            <div className="education-item">
+              <div className="education-header">
+                <h3>IGCSE & Additional Qualifications</h3>
+                <span className="education-period">2016 - 2022</span>
+              </div>
+              <div className="education-details">
+                <p className="education-institution">
+                  British Spring College, Awka
+                </p>
+                <div className="education-achievement">
+                  <span className="grade-highlight">
+                    5 A*/A Grades • SAT: 1390 (97th percentile) • IELTS: 8/9
+                  </span>
+                </div>
+                <div className="coursework">
+                  <span className="course-tag">Mathematics A*</span>
+                  <span className="course-tag">Biology A*</span>
+                  <span className="course-tag">Chemistry A*</span>
+                  <span className="course-tag">Physics A*</span>
+                  <span className="course-tag">English A</span>
                 </div>
               </div>
             </div>
