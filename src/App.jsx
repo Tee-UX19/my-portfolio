@@ -13,7 +13,14 @@ function App() {
       setIsVisible(true);
 
       // Intersection Observer for section tracking
-      const sections = ["home", "about", "education", "skills", "projects", "contact"];
+      const sections = [
+        "home",
+        "about",
+        "education",
+        "skills",
+        "projects",
+        "contact",
+      ];
       const observers = sections.map((sectionId) => {
         const element = document.getElementById(sectionId);
         if (element) {
@@ -135,7 +142,8 @@ function App() {
               Computer Science Student & Aspiring Developer
             </p>
             <p className="hero-description">
-              3rd Year Computer Science student at University of Birmingham, passionate about learning and building innovative web applications
+              3rd Year Computer Science student at University of Birmingham,
+              passionate about learning and building innovative web applications
             </p>
             <div className="hero-buttons">
               <button
@@ -169,15 +177,17 @@ function App() {
           <div className="about-content">
             <div className="about-text">
               <p>
-                I'm a 3rd year Computer Science student at the University of Birmingham, 
-                passionate about software development and technology. Through my studies and 
-                personal projects, I've been exploring web development, programming languages, 
-                and software engineering principles.
+                I'm a 3rd year Computer Science student at the University of
+                Birmingham, passionate about software development and
+                technology. Through my studies and personal projects, I've been
+                exploring web development, programming languages, and software
+                engineering principles.
               </p>
               <p>
-                I enjoy learning new technologies and applying theoretical knowledge to practical 
-                projects. I'm particularly interested in full-stack development and creating 
-                user-friendly applications that solve real-world problems.
+                I enjoy learning new technologies and applying theoretical
+                knowledge to practical projects. I'm particularly interested in
+                full-stack development and creating user-friendly applications
+                that solve real-world problems.
               </p>
               <div className="stats">
                 <div className="stat-item">
@@ -209,17 +219,24 @@ function App() {
                 <span className="education-period">2022 - 2025 (Expected)</span>
               </div>
               <div className="education-details">
-                <p className="education-institution">University of Birmingham</p>
+                <p className="education-institution">
+                  University of Birmingham
+                </p>
                 <p className="education-description">
-                  Currently in my 3rd year studying Computer Science with a focus on software engineering, 
-                  algorithms, data structures, and web development. Relevant coursework includes:
+                  Currently in my 3rd year studying Computer Science with a
+                  focus on software engineering, algorithms, data structures,
+                  and web development. Relevant coursework includes:
                 </p>
                 <div className="coursework">
-                  <span className="course-tag">Data Structures & Algorithms</span>
+                  <span className="course-tag">
+                    Data Structures & Algorithms
+                  </span>
                   <span className="course-tag">Software Engineering</span>
                   <span className="course-tag">Database Systems</span>
                   <span className="course-tag">Web Development</span>
-                  <span className="course-tag">Object-Oriented Programming</span>
+                  <span className="course-tag">
+                    Object-Oriented Programming
+                  </span>
                   <span className="course-tag">Computer Networks</span>
                 </div>
               </div>
@@ -284,9 +301,9 @@ function App() {
               <div className="project-content">
                 <h3>Personal Portfolio Website</h3>
                 <p>
-                  A responsive portfolio website built with React and modern CSS. 
-                  Features include smooth animations, particle background effects, 
-                  and a clean, professional design.
+                  A responsive portfolio website built with React and modern
+                  CSS. Features include smooth animations, particle background
+                  effects, and a clean, professional design.
                 </p>
                 <div className="project-tech">
                   <span>React</span>
@@ -313,9 +330,9 @@ function App() {
               <div className="project-content">
                 <h3>Data Structures Implementation</h3>
                 <p>
-                  Academic project implementing various data structures and algorithms 
-                  in Java. Includes binary trees, hash tables, and sorting algorithms 
-                  with performance analysis.
+                  Academic project implementing various data structures and
+                  algorithms in Java. Includes binary trees, hash tables, and
+                  sorting algorithms with performance analysis.
                 </p>
                 <div className="project-tech">
                   <span>Java</span>
@@ -342,9 +359,9 @@ function App() {
               <div className="project-content">
                 <h3>To-Do List Application</h3>
                 <p>
-                  A simple yet functional to-do list application built while learning 
-                  React. Features include local storage, task filtering, and a 
-                  responsive design.
+                  A simple yet functional to-do list application built while
+                  learning React. Features include local storage, task
+                  filtering, and a responsive design.
                 </p>
                 <div className="project-tech">
                   <span>React</span>
@@ -373,8 +390,8 @@ function App() {
             <div className="contact-info">
               <h3>Let's connect!</h3>
               <p>
-                I'm always eager to learn from others and discuss technology, 
-                programming, or potential collaboration opportunities. Feel free 
+                I'm always eager to learn from others and discuss technology,
+                programming, or potential collaboration opportunities. Feel free
                 to reach out if you'd like to connect!
               </p>
               <div className="contact-links">
