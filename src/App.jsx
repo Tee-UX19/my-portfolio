@@ -338,32 +338,35 @@ function App() {
       {/* Projects Section */}
       <section id="projects" className="projects">
         <div className="container">
-          <h2 className="section-title">Academic & Personal Projects</h2>
+          <h2 className="section-title">Application Portfolio (Projects)</h2>
           <div className="projects-grid">
             <div className="project-card">
               <div className="project-image">
                 <div className="project-placeholder">
-                  <span>Portfolio Website</span>
+                  <span>Grocery App</span>
                 </div>
               </div>
               <div className="project-content">
-                <h3>Personal Portfolio Website</h3>
+                <h3>Grocery App Prototype</h3>
                 <p>
-                  A responsive portfolio website built with React and modern
-                  CSS. Features include smooth animations, particle background
-                  effects, and a clean, professional design.
+                  Collaborated as a team to create a shared grocery shopping app
+                  using React and Bootstrap for the frontend with Express for
+                  the backend. Implemented version control and CI/CD using
+                  GitHub and GitHub Actions.
                 </p>
                 <div className="project-tech">
                   <span>React</span>
-                  <span>CSS3</span>
-                  <span>JavaScript</span>
+                  <span>Bootstrap</span>
+                  <span>Express</span>
+                  <span>GitHub Actions</span>
+                  <span>CI/CD</span>
                 </div>
                 <div className="project-links">
                   <a href="#" className="project-link">
-                    Live Demo
+                    GitHub
                   </a>
                   <a href="#" className="project-link">
-                    GitHub
+                    Documentation
                   </a>
                 </div>
               </div>
@@ -372,28 +375,30 @@ function App() {
             <div className="project-card">
               <div className="project-image">
                 <div className="project-placeholder">
-                  <span>University Project</span>
+                  <span>Network Security</span>
                 </div>
               </div>
               <div className="project-content">
-                <h3>Data Structures Implementation</h3>
+                <h3>Firewall Program</h3>
                 <p>
-                  Academic project implementing various data structures and
-                  algorithms in Java. Includes binary trees, hash tables, and
-                  sorting algorithms with performance analysis.
+                  Built a firewall program using C with networking and
+                  multithreading libraries to reject/accept connection requests
+                  from port and IP ranges managed by a configurable ruleset.
                 </p>
                 <div className="project-tech">
-                  <span>Java</span>
-                  <span>Algorithms</span>
-                  <span>Data Structures</span>
+                  <span>C</span>
+                  <span>Networking</span>
+                  <span>Multithreading</span>
+                  <span>Security</span>
+                  <span>System Programming</span>
                 </div>
                 <div className="project-links">
+                  <a href="#" className="project-link">
+                    GitHub
+                  </a>
                   <a href="#" className="project-link">
                     Report
                   </a>
-                  <a href="#" className="project-link">
-                    GitHub
-                  </a>
                 </div>
               </div>
             </div>
@@ -401,20 +406,25 @@ function App() {
             <div className="project-card">
               <div className="project-image">
                 <div className="project-placeholder">
-                  <span>Learning Project</span>
+                  <span>Campus Events</span>
                 </div>
               </div>
               <div className="project-content">
-                <h3>To-Do List Application</h3>
+                <h3>Campus Events App</h3>
                 <p>
-                  A simple yet functional to-do list application built while
-                  learning React. Features include local storage, task
-                  filtering, and a responsive design.
+                  Collaborated with a team to develop a web application using
+                  JHipster with Spring Boot, Angular and PostgreSQL, enabling
+                  students to browse and follow events and societies. Used
+                  Azure, Docker and GitHub Actions for CI/CD and cloud
+                  deployment.
                 </p>
                 <div className="project-tech">
-                  <span>React</span>
-                  <span>Local Storage</span>
-                  <span>CSS3</span>
+                  <span>JHipster</span>
+                  <span>Spring Boot</span>
+                  <span>Angular</span>
+                  <span>PostgreSQL</span>
+                  <span>Azure</span>
+                  <span>Docker</span>
                 </div>
                 <div className="project-links">
                   <a href="#" className="project-link">
