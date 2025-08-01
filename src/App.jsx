@@ -18,6 +18,8 @@ function App() {
         "about",
         "education",
         "skills",
+        "languages",
+        "interests",
         "projects",
         "contact",
       ];
@@ -105,6 +107,24 @@ function App() {
                 className={activeSection === "skills" ? "active" : ""}
               >
                 Skills
+              </a>
+            </li>
+            <li>
+              <a
+                href="#languages"
+                onClick={() => scrollToSection("languages")}
+                className={activeSection === "languages" ? "active" : ""}
+              >
+                Languages
+              </a>
+            </li>
+            <li>
+              <a
+                href="#interests"
+                onClick={() => scrollToSection("interests")}
+                className={activeSection === "interests" ? "active" : ""}
+              >
+                Interests
               </a>
             </li>
             <li>
@@ -301,35 +321,123 @@ function App() {
             <div className="skill-category">
               <h3>Programming Languages</h3>
               <div className="skill-items">
+                <span className="skill-tag">C</span>
+                <span className="skill-tag">Python</span>
                 <span className="skill-tag">Java</span>
                 <span className="skill-tag">JavaScript</span>
-                <span className="skill-tag">Python</span>
-                <span className="skill-tag">HTML5</span>
-                <span className="skill-tag">CSS3</span>
-                <span className="skill-tag">C</span>
+                <span className="skill-tag">TypeScript</span>
+                <span className="skill-tag">Haskell</span>
+                <span className="skill-tag">PowerShell</span>
               </div>
             </div>
             <div className="skill-category">
-              <h3>Frameworks & Technologies</h3>
+              <h3>Frameworks & Libraries</h3>
               <div className="skill-items">
                 <span className="skill-tag">React</span>
-                <span className="skill-tag">Node.js</span>
-                <span className="skill-tag">Git</span>
-                <span className="skill-tag">MySQL</span>
-                <span className="skill-tag">MongoDB</span>
-                <span className="skill-tag">REST APIs</span>
+                <span className="skill-tag">Angular</span>
+                <span className="skill-tag">Spring Boot</span>
+                <span className="skill-tag">JHipster</span>
               </div>
             </div>
             <div className="skill-category">
-              <h3>Currently Learning</h3>
+              <h3>Tools & Software</h3>
               <div className="skill-items">
-                <span className="skill-tag">TypeScript</span>
-                <span className="skill-tag">Express.js</span>
+                <span className="skill-tag">GitHub</span>
+                <span className="skill-tag">Git</span>
+                <span className="skill-tag">GitLab</span>
+                <span className="skill-tag">VS Code</span>
                 <span className="skill-tag">Docker</span>
-                <span className="skill-tag">AWS</span>
-                <span className="skill-tag">Machine Learning</span>
-                <span className="skill-tag">Spring Boot</span>
+                <span className="skill-tag">Azure</span>
+                <span className="skill-tag">Vercel</span>
+                <span className="skill-tag">WSL</span>
+                <span className="skill-tag">DevTools</span>
+                <span className="skill-tag">MS Office</span>
               </div>
+            </div>
+            <div className="skill-category">
+              <h3>Databases & Cloud</h3>
+              <div className="skill-items">
+                <span className="skill-tag">PostgreSQL</span>
+                <span className="skill-tag">Azure</span>
+                <span className="skill-tag">Docker</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Languages Section */}
+      <section id="languages" className="languages">
+        <div className="container">
+          <h2 className="section-title">Languages</h2>
+          <div className="languages-grid">
+            <div className="language-item">
+              <div className="language-header">
+                <h3>English</h3>
+                <span className="language-level fluent">Fluent</span>
+              </div>
+              <div className="language-details">
+                <p>IELTS: 8/9 • Professional proficiency</p>
+              </div>
+            </div>
+            <div className="language-item">
+              <div className="language-header">
+                <h3>Igbo</h3>
+                <span className="language-level basic">Basic</span>
+              </div>
+              <div className="language-details">
+                <p>Conversational level</p>
+              </div>
+            </div>
+            <div className="language-item">
+              <div className="language-header">
+                <h3>Spanish</h3>
+                <span className="language-level learning">Learning</span>
+              </div>
+              <div className="language-details">
+                <p>Basic level • Currently improving</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Interests Section */}
+      <section id="interests" className="interests">
+        <div className="container">
+          <h2 className="section-title">Interests & Hobbies</h2>
+          <div className="interests-grid">
+            <div className="interest-item">
+              <div className="interest-icon">⚽</div>
+              <h3>Football</h3>
+              <p>Passionate about the sport, both playing and following</p>
+            </div>
+            <div className="interest-item">
+              <div className="interest-icon">🎵</div>
+              <h3>Singing</h3>
+              <p>Musical expression and performance</p>
+            </div>
+            <div className="interest-item">
+              <div className="interest-icon">🌍</div>
+              <h3>Language Learning</h3>
+              <p>Currently learning Spanish and improving linguistic skills</p>
+            </div>
+            <div className="interest-item">
+              <div className="interest-icon">🧠</div>
+              <h3>Psychology</h3>
+              <p>Understanding human behavior and cognitive processes</p>
+            </div>
+            <div className="interest-item">
+              <div className="interest-icon">🤖</div>
+              <h3>AI/ML</h3>
+              <p>
+                Exploring artificial intelligence and machine learning concepts
+              </p>
+            </div>
+            <div className="interest-item">
+              <div className="interest-icon">📱</div>
+              <h3>App Development</h3>
+              <p>Building applications and exploring new technologies</p>
             </div>
           </div>
         </div>
