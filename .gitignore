@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Development and AI assistant files
+CLAUDE.md
+DEVELOPMENT_GUIDE.md

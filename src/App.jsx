@@ -17,9 +17,11 @@ function App() {
         "home",
         "about",
         "education",
+        "experience",
         "skills",
         "languages",
         "interests",
+        "achievements",
         "projects",
         "contact",
       ];
@@ -102,6 +104,15 @@ function App() {
             </li>
             <li>
               <a
+                href="#experience"
+                onClick={() => scrollToSection("experience")}
+                className={activeSection === "experience" ? "active" : ""}
+              >
+                Experience
+              </a>
+            </li>
+            <li>
+              <a
                 href="#skills"
                 onClick={() => scrollToSection("skills")}
                 className={activeSection === "skills" ? "active" : ""}
@@ -125,6 +136,15 @@ function App() {
                 className={activeSection === "interests" ? "active" : ""}
               >
                 Interests
+              </a>
+            </li>
+            <li>
+              <a
+                href="#achievements"
+                onClick={() => scrollToSection("achievements")}
+                className={activeSection === "achievements" ? "active" : ""}
+              >
+                Achievements
               </a>
             </li>
             <li>
@@ -173,6 +193,13 @@ function App() {
               >
                 View My Work
               </button>
+              <a
+                href="/Timothy-Joseph CV.pdf"
+                download="Timothy-Joseph-Godwin-CV.pdf"
+                className="btn-secondary"
+              >
+                Download CV
+              </a>
               <button
                 className="btn-secondary"
                 onClick={() => scrollToSection("contact")}
@@ -252,7 +279,7 @@ function App() {
                 </p>
                 <div className="education-achievement">
                   <span className="grade-highlight">
-                    Expected First Class • Year 1: 72%
+                    GPA: 3.9/4.25 • Expected First Class
                   </span>
                 </div>
                 <p className="education-description">
@@ -283,7 +310,7 @@ function App() {
                 </p>
                 <div className="education-achievement">
                   <span className="grade-highlight">
-                    Mathematics: 90% • IT: 88% • Extended Project: 72%
+                    Average: 85% • Mathematics: 90% • IT: 88% • Extended Project: 72%
                   </span>
                 </div>
                 <p className="education-description">
@@ -320,6 +347,71 @@ function App() {
         </div>
       </section>
 
+      {/* Experience Section */}
+      <section id="experience" className="experience">
+        <div className="container">
+          <h2 className="section-title">Experience</h2>
+          <div className="experience-content">
+            <div className="experience-item">
+              <div className="experience-header">
+                <h3>Data Analysis Intern/Trainee</h3>
+                <span className="experience-period">July 2025 – Aug 2025</span>
+              </div>
+              <div className="experience-details">
+                <p className="experience-company">Uptrail, London, UK</p>
+                <ul className="experience-achievements">
+                  <li>
+                    Cleaned and analyzed over 300 customer sign-ups and 120+ support tickets using Pandas, uncovering acquisition trends, regional gaps, and plan preferences to inform targeted marketing strategies for SaaS and e-commerce clients
+                  </li>
+                  <li>
+                    Built Scikit-learn logistic regression model on 1,494 streaming customers achieving 76.6% accuracy, identifying mobile usage and geographic patterns as key churn drivers for targeted retention strategies
+                  </li>
+                  <li>
+                    Designed interactive Tableau dashboard integrating 3 datasets (15,822 records) with 6 calculated KPIs, enabling executive strategic planning through geographic mapping and customer segmentation analysis
+                  </li>
+                  <li>
+                    Analyzed 2,992 sales records across 499 customers to identify top loyalty tiers and delivery optimization opportunities (41% delay reduction potential) through 6 data visualizations and strategic analysis
+                  </li>
+                </ul>
+                <div className="experience-tech">
+                  <span className="tech-tag">Pandas</span>
+                  <span className="tech-tag">Scikit-learn</span>
+                  <span className="tech-tag">Tableau</span>
+                  <span className="tech-tag">Data Analysis</span>
+                  <span className="tech-tag">Machine Learning</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="experience-item">
+              <div className="experience-header">
+                <h3>Medical File Clerk</h3>
+                <span className="experience-period">Sept 2022 – Nov 2022</span>
+              </div>
+              <div className="experience-details">
+                <p className="experience-company">Obioma Specialist Hospital, Awka, Nigeria</p>
+                <ul className="experience-achievements">
+                  <li>
+                    Managed efficient retrieval and organization of patient medical records in high-volume healthcare environment
+                  </li>
+                  <li>
+                    Digitized over 100 paper medical records using Microsoft Excel, improving data accessibility and storage
+                  </li>
+                  <li>
+                    Maintained accurate patient file indexes and resolved filing issues, communicating with medical staff where necessary
+                  </li>
+                </ul>
+                <div className="experience-tech">
+                  <span className="tech-tag">Microsoft Excel</span>
+                  <span className="tech-tag">Data Management</span>
+                  <span className="tech-tag">Healthcare Systems</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Skills Section */}
       <section id="skills" className="skills">
         <div className="container">
@@ -344,6 +436,17 @@ function App() {
                 <span className="skill-tag">Angular</span>
                 <span className="skill-tag">Spring Boot</span>
                 <span className="skill-tag">JHipster</span>
+              </div>
+            </div>
+            <div className="skill-category">
+              <h3>Data Analysis & ML</h3>
+              <div className="skill-items">
+                <span className="skill-tag">Pandas</span>
+                <span className="skill-tag">Scikit-learn</span>
+                <span className="skill-tag">PyTorch</span>
+                <span className="skill-tag">Tableau</span>
+                <span className="skill-tag">Data Visualization</span>
+                <span className="skill-tag">Predictive Modeling</span>
               </div>
             </div>
             <div className="skill-category">
@@ -450,6 +553,47 @@ function App() {
         </div>
       </section>
 
+      {/* Achievements Section */}
+      <section id="achievements" className="achievements">
+        <div className="container">
+          <h2 className="section-title">Achievements & Awards</h2>
+          <div className="achievements-grid">
+            <div className="achievement-item">
+              <div className="achievement-icon">🏆</div>
+              <h3>UG Outstanding Achievement Award</h3>
+              <p className="achievement-year">2023/24</p>
+              <p className="achievement-description">
+                Recognized for outstanding academic performance in Computer Science with Software Engineering (SRM Funded)
+              </p>
+            </div>
+            <div className="achievement-item">
+              <div className="achievement-icon">🥈</div>
+              <h3>Silver Medallist - Physics Olympiad</h3>
+              <p className="achievement-year">State Level</p>
+              <p className="achievement-description">
+                Achieved silver medal in competitive state-level Physics Olympiad competition
+              </p>
+            </div>
+            <div className="achievement-item">
+              <div className="achievement-icon">🥈</div>
+              <h3>Silver Medallist - Mathematics Olympiad</h3>
+              <p className="achievement-year">State Level</p>
+              <p className="achievement-description">
+                Achieved silver medal in competitive state-level Mathematics Olympiad competition
+              </p>
+            </div>
+            <div className="achievement-item">
+              <div className="achievement-icon">⭐</div>
+              <h3>Top 3 Graduating Student</h3>
+              <p className="achievement-year">British Spring College</p>
+              <p className="achievement-description">
+                Graduated among top 3 students in the class with distinction in Further Mathematics
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Projects Section */}
       <section id="projects" className="projects">
         <div className="container">
@@ -494,18 +638,17 @@ function App() {
                 </div>
               </div>
               <div className="project-content">
-                <h3>Firewall Program</h3>
+                <h3>Network Firewall Program</h3>
                 <p>
-                  Built a firewall program using C with networking and
-                  multithreading libraries to reject/accept connection requests
-                  from port and IP ranges managed by a configurable ruleset.
+                  Designed multithreaded firewall server using pthreads with mutex synchronization, supporting concurrent client connections and dual-mode operation (interactive CLI and IPv6 network server). Implemented rule management system with linked-list data structures for Add/Delete/List/Check operations on IP range and port range filtering rules. Engineered advanced IP validation using inet_pton() and network byte order conversions, enabling precise IP range matching and connection acceptance/rejection decisions.
                 </p>
                 <div className="project-tech">
                   <span>C</span>
+                  <span>Pthreads</span>
                   <span>Networking</span>
-                  <span>Multithreading</span>
-                  <span>Security</span>
+                  <span>IPv6</span>
                   <span>System Programming</span>
+                  <span>Data Structures</span>
                 </div>
                 <div className="project-links">
                   <a href="#" className="project-link">
@@ -527,11 +670,7 @@ function App() {
               <div className="project-content">
                 <h3>Campus Events App</h3>
                 <p>
-                  Collaborated with a team to develop a web application using
-                  JHipster with Spring Boot, Angular and PostgreSQL, enabling
-                  students to browse and follow events and societies. Used
-                  Azure, Docker and GitHub Actions for CI/CD and cloud
-                  deployment.
+                  Developed a full-stack web application for university students to discover and review campus events and societies as part of a 7-member team. Led CI/CD pipeline implementation using Azure for deployment, Docker containerization, and GitHub Actions runners. Enhanced user experience by developing responsive design for mobile screen sizes and other accessibility features. Architected RESTful APIs with Spring Boot and resolved database migration issues using Liquibase.
                 </p>
                 <div className="project-tech">
                   <span>JHipster</span>
@@ -574,6 +713,13 @@ function App() {
                 >
                   <span>📧</span>
                   tj.godwin1904@gmail.com
+                </a>
+                <a
+                  href="tel:+447961585772"
+                  className="contact-link"
+                >
+                  <span>📱</span>
+                  +44 7961 585 772
                 </a>
                 <a
                   href="http://www.linkedin.com/in/timothy-joseph-godwin-0b4bb2292"
