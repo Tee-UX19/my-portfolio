@@ -351,7 +351,7 @@ section {
 }
 
 .education-content {
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
@@ -372,6 +372,117 @@ section {
 
 .education-item:last-child {
   margin-bottom: 0;
+}
+
+/* Experience Section - Enhanced */
+.experience {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.experience-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.experience-item {
+  background: linear-gradient(
+    135deg,
+    rgba(102, 126, 234, 0.08) 0%,
+    rgba(118, 75, 162, 0.08) 100%
+  );
+  padding: 2.5rem;
+  border-radius: 20px;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(102, 126, 234, 0.2);
+  transition: all 0.3s ease;
+  margin-bottom: 2.5rem;
+}
+
+.experience-item:hover {
+  transform: translateY(-8px);
+  border-color: rgba(102, 126, 234, 0.4);
+  box-shadow: 0 20px 40px rgba(102, 126, 234, 0.15);
+}
+
+.experience-item:last-child {
+  margin-bottom: 0;
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.experience-header h3 {
+  font-size: 1.6rem;
+  color: #e4e6ea;
+  margin: 0;
+  font-weight: 700;
+}
+
+.experience-period {
+  color: #667eea;
+  font-weight: 600;
+  background: rgba(102, 126, 234, 0.25);
+  padding: 0.6rem 1.2rem;
+  border-radius: 15px;
+  font-size: 0.95rem;
+  border: 1px solid rgba(102, 126, 234, 0.3);
+}
+
+.experience-company {
+  font-size: 1.2rem;
+  color: #a8b2d1;
+  margin-bottom: 1.2rem;
+  font-weight: 600;
+}
+
+.experience-achievements {
+  margin: 0 0 1.5rem 1.2rem;
+  padding: 0;
+}
+
+.experience-achievements li {
+  color: #a8b2d1;
+  margin-bottom: 0.8rem;
+  line-height: 1.7;
+  position: relative;
+  padding-left: 0.5rem;
+}
+
+.experience-achievements li:last-child {
+  margin-bottom: 0;
+}
+
+.experience-achievements li::marker {
+  color: #667eea;
+}
+
+.experience-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.tech-tag {
+  background: rgba(102, 126, 234, 0.25);
+  color: #667eea;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border: 1px solid rgba(102, 126, 234, 0.3);
+  transition: all 0.3s ease;
+}
+
+.tech-tag:hover {
+  background: rgba(102, 126, 234, 0.35);
+  transform: translateY(-2px);
 }
 
 .education-header {
@@ -503,127 +614,52 @@ section {
   transform: translateY(-2px);
 }
 
-/* Languages Section */
-.languages {
-  background: rgba(255, 255, 255, 0.03);
+/* Languages & Interests Compact Section */
+.languages-interests-compact {
+  background: rgba(255, 255, 255, 0.02);
+  padding: 3rem 0;
 }
 
-.languages-grid {
+.compact-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
-.language-item {
+.compact-item {
   background: rgba(255, 255, 255, 0.05);
-  padding: 2rem;
-  border-radius: 20px;
+  padding: 1.5rem 2rem;
+  border-radius: 15px;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  transition: transform 0.3s ease;
+  transition: all 0.3s ease;
 }
 
-.language-item:hover {
-  transform: translateY(-5px);
+.compact-item:hover {
+  transform: translateY(-3px);
+  border-color: rgba(102, 126, 234, 0.3);
 }
 
-.language-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1rem;
-}
-
-.language-header h3 {
-  font-size: 1.4rem;
-  color: #e4e6ea;
-  margin: 0;
-}
-
-.language-level {
-  padding: 0.5rem 1rem;
-  border-radius: 15px;
-  font-size: 0.85rem;
+.compact-title {
+  font-size: 1.1rem;
+  color: #667eea;
+  margin-bottom: 0.8rem;
   font-weight: 600;
 }
 
-.language-level.fluent {
-  background: rgba(46, 213, 115, 0.2);
-  color: #2ed573;
-  border: 1px solid rgba(46, 213, 115, 0.3);
-}
-
-.language-level.basic {
-  background: rgba(255, 184, 77, 0.2);
-  color: #ffb84d;
-  border: 1px solid rgba(255, 184, 77, 0.3);
-}
-
-.language-level.learning {
-  background: rgba(102, 126, 234, 0.2);
-  color: #667eea;
-  border: 1px solid rgba(102, 126, 234, 0.3);
-}
-
-.language-details p {
-  color: #a0a0a0;
-  font-size: 0.95rem;
+.compact-content {
+  color: #a8b2d1;
+  font-size: 1rem;
+  line-height: 1.8;
   margin: 0;
 }
 
-/* Interests Section */
-.interests {
-  background: rgba(255, 255, 255, 0.02);
-}
-
-.interests-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
-}
-
-.interest-item {
-  background: rgba(255, 255, 255, 0.05);
-  padding: 2rem;
-  border-radius: 20px;
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  transition: all 0.3s ease;
-  text-align: center;
-}
-
-.interest-item:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
-}
-
-.interest-icon {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  filter: grayscale(0.3);
-  transition: all 0.3s ease;
-}
-
-.interest-item:hover .interest-icon {
-  filter: grayscale(0);
-  transform: scale(1.1);
-}
-
-.interest-item h3 {
-  font-size: 1.3rem;
+.highlight-text {
   color: #e4e6ea;
-  margin-bottom: 1rem;
-}
-
-.interest-item p {
-  color: #a0a0a0;
-  font-size: 0.95rem;
-  line-height: 1.6;
-  margin: 0;
+  font-weight: 600;
 }
 
 /* Projects Section */
@@ -908,31 +944,36 @@ section {
     grid-template-columns: 1fr;
   }
 
-  .languages-grid {
+  .compact-grid {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
 
-  .interests-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .language-header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.5rem;
+  .compact-item {
+    padding: 1.2rem 1.5rem;
   }
 
   .projects-grid {
     grid-template-columns: 1fr;
   }
 
-  .education-header {
+  .education-header,
+  .experience-header {
     flex-direction: column;
     align-items: flex-start;
     text-align: left;
   }
 
-  .education-header h3 {
+  .education-header h3,
+  .experience-header h3 {
     font-size: 1.3rem;
+  }
+
+  .experience-item {
+    padding: 1.8rem;
+  }
+
+  .experience-achievements {
+    margin-left: 0.8rem;
   }
 }

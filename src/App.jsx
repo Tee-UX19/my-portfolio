@@ -20,7 +20,6 @@ function App() {
         "experience",
         "skills",
         "languages",
-        "interests",
         "achievements",
         "projects",
         "contact",
@@ -118,24 +117,6 @@ function App() {
                 className={activeSection === "skills" ? "active" : ""}
               >
                 Skills
-              </a>
-            </li>
-            <li>
-              <a
-                href="#languages"
-                onClick={() => scrollToSection("languages")}
-                className={activeSection === "languages" ? "active" : ""}
-              >
-                Languages
-              </a>
-            </li>
-            <li>
-              <a
-                href="#interests"
-                onClick={() => scrollToSection("interests")}
-                className={activeSection === "interests" ? "active" : ""}
-              >
-                Interests
               </a>
             </li>
             <li>
@@ -354,57 +335,63 @@ function App() {
           <div className="experience-content">
             <div className="experience-item">
               <div className="experience-header">
-                <h3>Data Analysis Intern/Trainee</h3>
-                <span className="experience-period">July 2025 – Aug 2025</span>
+                <h3>Data Engineering Intern</h3>
+                <span className="experience-period">Sept 2025 – Oct 2025</span>
               </div>
               <div className="experience-details">
-                <p className="experience-company">Uptrail, London, UK</p>
+                <p className="experience-company">London Success Academy, London, UK</p>
                 <ul className="experience-achievements">
                   <li>
-                    Cleaned and analyzed over 300 customer sign-ups and 120+ support tickets using Pandas, uncovering acquisition trends, regional gaps, and plan preferences to inform targeted marketing strategies for SaaS and e-commerce clients
+                    Built enterprise-scale ETL pipeline processing 300,000+ records using Python, Apache Spark, and GCP, achieving 80% storage optimisation through Parquet format with real-time API integration
                   </li>
                   <li>
-                    Built Scikit-learn logistic regression model on 1,494 streaming customers achieving 76.6% accuracy, identifying mobile usage and geographic patterns as key churn drivers for targeted retention strategies
+                    Orchestrated production data workflows using Apache Airflow on Google Cloud Composer with automated scheduling, BigQuery metadata tracking, and data validation ensuring 99%+ pipeline reliability
                   </li>
                   <li>
-                    Designed interactive Tableau dashboard integrating 3 datasets (15,822 records) with 6 calculated KPIs, enabling executive strategic planning through geographic mapping and customer segmentation analysis
+                    Designed BigQuery data warehouse with partitioned/clustered tables processing $15.3M transaction volume across 5 currencies, implementing query optimisation reducing costs by 80% through partition pruning
                   </li>
                   <li>
-                    Analyzed 2,992 sales records across 499 customers to identify top loyalty tiers and delivery optimization opportunities (41% delay reduction potential) through 6 data visualizations and strategic analysis
+                    Deployed distributed Apache Spark processing on GCP Dataproc cluster, scaling from single-machine to 3-node architecture, processing 95,000+ clickstream events and 50,000+ financial transactions with zero data loss
                   </li>
                 </ul>
                 <div className="experience-tech">
-                  <span className="tech-tag">Pandas</span>
-                  <span className="tech-tag">Scikit-learn</span>
-                  <span className="tech-tag">Tableau</span>
-                  <span className="tech-tag">Data Analysis</span>
-                  <span className="tech-tag">Machine Learning</span>
+                  <span className="tech-tag">Python</span>
+                  <span className="tech-tag">Apache Spark</span>
+                  <span className="tech-tag">PySpark</span>
+                  <span className="tech-tag">GCP</span>
+                  <span className="tech-tag">BigQuery</span>
+                  <span className="tech-tag">Apache Airflow</span>
+                  <span className="tech-tag">ETL Pipelines</span>
+                  <span className="tech-tag">Dataproc</span>
                 </div>
               </div>
             </div>
 
             <div className="experience-item">
               <div className="experience-header">
-                <h3>Medical File Clerk</h3>
-                <span className="experience-period">Sept 2022 – Nov 2022</span>
+                <h3>Data Analysis Intern</h3>
+                <span className="experience-period">July 2025 – Aug 2025</span>
               </div>
               <div className="experience-details">
-                <p className="experience-company">Obioma Specialist Hospital, Awka, Nigeria</p>
+                <p className="experience-company">Uptrail, London, UK</p>
                 <ul className="experience-achievements">
                   <li>
-                    Managed efficient retrieval and organization of patient medical records in high-volume healthcare environment
+                    Cleaned and analysed 2,992 sales records across 499 customers to identify top loyalty tiers and delivery optimisation opportunities (41% delay reduction potential) through 6 data visualisations and strategic analysis
                   </li>
                   <li>
-                    Digitized over 100 paper medical records using Microsoft Excel, improving data accessibility and storage
+                    Developed Scikit-learn logistic regression model on 1,494 streaming customers achieving 76.6% accuracy, identifying mobile usage and geographic patterns as key churn drivers for targeted retention strategies
                   </li>
                   <li>
-                    Maintained accurate patient file indexes and resolved filing issues, communicating with medical staff where necessary
+                    Created interactive Tableau dashboard integrating 3 datasets (15,822 records) with 6 calculated KPIs, enabling executive strategic planning through geographic mapping and customer segmentation analysis
                   </li>
                 </ul>
                 <div className="experience-tech">
-                  <span className="tech-tag">Microsoft Excel</span>
-                  <span className="tech-tag">Data Management</span>
-                  <span className="tech-tag">Healthcare Systems</span>
+                  <span className="tech-tag">Python</span>
+                  <span className="tech-tag">Pandas</span>
+                  <span className="tech-tag">Scikit-learn</span>
+                  <span className="tech-tag">Tableau</span>
+                  <span className="tech-tag">Data Analysis</span>
+                  <span className="tech-tag">Machine Learning</span>
                 </div>
               </div>
             </div>
@@ -420,134 +407,75 @@ function App() {
             <div className="skill-category">
               <h3>Programming Languages</h3>
               <div className="skill-items">
-                <span className="skill-tag">C</span>
                 <span className="skill-tag">Python</span>
+                <span className="skill-tag">SQL</span>
                 <span className="skill-tag">Java</span>
                 <span className="skill-tag">JavaScript</span>
                 <span className="skill-tag">TypeScript</span>
+                <span className="skill-tag">C</span>
                 <span className="skill-tag">Haskell</span>
                 <span className="skill-tag">PowerShell</span>
               </div>
             </div>
             <div className="skill-category">
-              <h3>Frameworks & Libraries</h3>
+              <h3>Data Engineering & ML</h3>
+              <div className="skill-items">
+                <span className="skill-tag">PySpark</span>
+                <span className="skill-tag">Apache Spark</span>
+                <span className="skill-tag">Pandas</span>
+                <span className="skill-tag">NumPy</span>
+                <span className="skill-tag">Scikit-learn</span>
+                <span className="skill-tag">Tableau</span>
+                <span className="skill-tag">ETL Pipelines</span>
+              </div>
+            </div>
+            <div className="skill-category">
+              <h3>Web Technologies</h3>
               <div className="skill-items">
                 <span className="skill-tag">React</span>
                 <span className="skill-tag">Angular</span>
                 <span className="skill-tag">Spring Boot</span>
-                <span className="skill-tag">JHipster</span>
+                <span className="skill-tag">HTML/CSS</span>
+                <span className="skill-tag">Bootstrap</span>
+                <span className="skill-tag">Express.js</span>
+                <span className="skill-tag">Node.js</span>
+                <span className="skill-tag">REST APIs</span>
               </div>
             </div>
             <div className="skill-category">
-              <h3>Data Analysis & ML</h3>
+              <h3>Cloud & Databases</h3>
               <div className="skill-items">
-                <span className="skill-tag">Pandas</span>
-                <span className="skill-tag">Scikit-learn</span>
-                <span className="skill-tag">PyTorch</span>
-                <span className="skill-tag">Tableau</span>
-                <span className="skill-tag">Data Visualization</span>
-                <span className="skill-tag">Predictive Modeling</span>
-              </div>
-            </div>
-            <div className="skill-category">
-              <h3>Tools & Software</h3>
-              <div className="skill-items">
-                <span className="skill-tag">GitHub</span>
-                <span className="skill-tag">Git</span>
-                <span className="skill-tag">GitLab</span>
-                <span className="skill-tag">VS Code</span>
-                <span className="skill-tag">Docker</span>
+                <span className="skill-tag">BigQuery</span>
+                <span className="skill-tag">Apache Airflow</span>
+                <span className="skill-tag">GCP</span>
+                <span className="skill-tag">AWS</span>
                 <span className="skill-tag">Azure</span>
-                <span className="skill-tag">Vercel</span>
-                <span className="skill-tag">WSL</span>
-                <span className="skill-tag">DevTools</span>
-                <span className="skill-tag">MS Office</span>
-              </div>
-            </div>
-            <div className="skill-category">
-              <h3>Databases & Cloud</h3>
-              <div className="skill-items">
+                <span className="skill-tag">Docker</span>
                 <span className="skill-tag">PostgreSQL</span>
-                <span className="skill-tag">Azure</span>
-                <span className="skill-tag">Docker</span>
+                <span className="skill-tag">GitHub</span>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Languages Section */}
-      <section id="languages" className="languages">
+      {/* Languages & Interests Section - Combined */}
+      <section id="languages" className="languages-interests-compact">
         <div className="container">
-          <h2 className="section-title">Languages</h2>
-          <div className="languages-grid">
-            <div className="language-item">
-              <div className="language-header">
-                <h3>English</h3>
-                <span className="language-level fluent">Fluent</span>
-              </div>
-              <div className="language-details">
-                <p>IELTS: 8/9 • Professional proficiency</p>
-              </div>
-            </div>
-            <div className="language-item">
-              <div className="language-header">
-                <h3>Igbo</h3>
-                <span className="language-level basic">Basic</span>
-              </div>
-              <div className="language-details">
-                <p>Conversational level</p>
-              </div>
-            </div>
-            <div className="language-item">
-              <div className="language-header">
-                <h3>Spanish</h3>
-                <span className="language-level learning">Learning</span>
-              </div>
-              <div className="language-details">
-                <p>Basic level • Currently improving</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Interests Section */}
-      <section id="interests" className="interests">
-        <div className="container">
-          <h2 className="section-title">Interests & Hobbies</h2>
-          <div className="interests-grid">
-            <div className="interest-item">
-              <div className="interest-icon">⚽</div>
-              <h3>Football</h3>
-              <p>Passionate about the sport, both playing and following</p>
-            </div>
-            <div className="interest-item">
-              <div className="interest-icon">🎵</div>
-              <h3>Singing</h3>
-              <p>Musical expression and performance</p>
-            </div>
-            <div className="interest-item">
-              <div className="interest-icon">🌍</div>
-              <h3>Language Learning</h3>
-              <p>Currently learning Spanish and improving linguistic skills</p>
-            </div>
-            <div className="interest-item">
-              <div className="interest-icon">🧠</div>
-              <h3>Psychology</h3>
-              <p>Understanding human behavior and cognitive processes</p>
-            </div>
-            <div className="interest-item">
-              <div className="interest-icon">🤖</div>
-              <h3>AI/ML</h3>
-              <p>
-                Exploring artificial intelligence and machine learning concepts
+          <div className="compact-grid">
+            <div className="compact-item">
+              <h3 className="compact-title">Languages</h3>
+              <p className="compact-content">
+                <span className="highlight-text">English</span> (C1 - IELTS 8/9) •
+                <span className="highlight-text"> Igbo</span> (Native) •
+                <span className="highlight-text"> Spanish</span> (A1)
               </p>
             </div>
-            <div className="interest-item">
-              <div className="interest-icon">📱</div>
-              <h3>App Development</h3>
-              <p>Building applications and exploring new technologies</p>
+            <div className="compact-item">
+              <h3 className="compact-title">Interests</h3>
+              <p className="compact-content">
+                Football • AI/ML • App Development • Language Learning
+              </p>
             </div>
           </div>
         </div>
