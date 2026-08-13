@@ -486,6 +486,9 @@ function App() {
                   <span>Azure</span>
                   <span>GitHub Actions</span>
                 </div>
+                <div className="project-links">
+                  <span className="project-link-note">Private repository</span>
+                </div>
               </div>
             </div>
 
@@ -521,6 +524,16 @@ function App() {
                   <span>C</span>
                   <span>pthreads</span>
                   <span>Networking</span>
+                </div>
+                <div className="project-links">
+                  <a
+                    href="https://github.com/Tee-UX19/ex1-OSSP"
+                    className="project-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    View on GitHub →
+                  </a>
                 </div>
               </div>
             </div>
