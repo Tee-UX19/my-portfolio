@@ -190,12 +190,12 @@ function App() {
               <span className="accent-text">Godwin</span>
             </h1>
             <p className="hero-subtitle">
-              Software Engineer — Data Engineering &amp; Full-Stack Development
+              Software Engineer: Data Engineering &amp; Full-Stack Development
             </p>
             <p className="hero-description">
               M.Eng Computer Science with Software Engineering, University of
-              Birmingham (final year). Currently looking for software
-              engineering roles.
+              Birmingham (final year). Currently open to software
+              engineering and other tech roles.
             </p>
             <div className="hero-buttons">
               <button
@@ -253,9 +253,8 @@ function App() {
               </p>
               <p>
                 I build production data pipelines, distributed processing
-                systems, and full-stack web apps — with a bias toward
-                reliability and things that actually ship. Currently looking
-                for software engineering roles.
+                systems, and full-stack web apps. Currently open to
+                software engineering and other tech roles.
               </p>
               <div className="stats">
                 <div className="stat-item">
@@ -326,6 +325,11 @@ function App() {
                 <p className="education-institution">
                   Kaplan International College, London · London, UK
                 </p>
+                <div className="education-achievement">
+                  <span className="grade-highlight">
+                    Average: 85% • Mathematics: 90% • IT: 88% • Extended Project: 72%
+                  </span>
+                </div>
                 <div className="coursework">
                   <span className="course-tag">Mathematics</span>
                   <span className="course-tag">Information Technology</span>
@@ -578,9 +582,9 @@ function App() {
             <div className="contact-info">
               <h3>Let's connect!</h3>
               <p>
-                I'm looking for software engineering roles — feel free to
-                reach out if you'd like to talk about an opportunity or a
-                project.
+                Again, I'm open to software engineering and any tech roles. Feel
+                free to reach out if you'd like to talk about an opportunity
+                or a project.
               </p>
               <div className="contact-links">
                 <a
@@ -683,12 +687,12 @@ function App() {
                 </button>
                 {formStatus === "success" && (
                   <p className="form-status form-status-success">
-                    Message sent — thanks, I'll get back to you soon.
+                    Message sent. Thanks, I'll get back to you soon.
                   </p>
                 )}
                 {formStatus === "error" && (
                   <p className="form-status form-status-error">
-                    Something went wrong — email me directly at{" "}
+                    Something went wrong? Email me directly at{" "}
                     tj.godwin1904@gmail.com instead.
                   </p>
                 )}
