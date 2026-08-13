@@ -11,20 +11,19 @@
 
 .particle {
   position: absolute;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: var(--color-accent);
   border-radius: 50%;
-  filter: blur(1px);
   animation: twinkle 3s ease-in-out infinite;
 }
 
 @keyframes twinkle {
   0%,
   100% {
-    opacity: 0.2;
+    opacity: 0.15;
     transform: scale(1);
   }
   50% {
-    opacity: 0.8;
+    opacity: 0.45;
     transform: scale(1.2);
   }
 }

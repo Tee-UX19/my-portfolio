@@ -7,6 +7,7 @@ function App() {
   const [isLoading, setIsLoading] = useState(true);
   const [isVisible, setIsVisible] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     if (!isLoading) {
@@ -55,6 +56,7 @@ function App() {
       element.scrollIntoView({ behavior: "smooth" });
       setActiveSection(sectionId);
     }
+    setIsMenuOpen(false);
   };
 
   const handleLoadingComplete = () => {
@@ -73,7 +75,19 @@ function App() {
       <nav className="navbar">
         <div className="nav-container">
           <div className="nav-logo">TJ</div>
-          <ul className="nav-menu">
+          <button
+            type="button"
+            className={`nav-toggle ${isMenuOpen ? "active" : ""}`}
+            aria-label="Toggle navigation menu"
+            aria-expanded={isMenuOpen}
+            aria-controls="primary-navigation"
+            onClick={() => setIsMenuOpen((open) => !open)}
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <ul id="primary-navigation" className={`nav-menu ${isMenuOpen ? "open" : ""}`}>
             <li>
               <a
                 href="#home"
@@ -154,10 +168,11 @@ function App() {
       <section id="home" className={`hero ${isVisible ? "fade-in" : ""}`}>
         <div className="hero-content">
           <div className="hero-text">
+            <span className="hero-eyebrow">$ whoami</span>
             <h1 className="hero-title">
-              <span className="gradient-text">Timothy-Joseph</span>
+              <span className="accent-text">Timothy-Joseph</span>
               <br />
-              <span className="gradient-text">Godwin</span>
+              <span className="accent-text">Godwin</span>
             </h1>
             <p className="hero-subtitle">
               Computer Science Student & Aspiring Software Engineer
@@ -209,7 +224,10 @@ function App() {
       {/* About Section */}
       <section id="about" className="about">
         <div className="container">
-          <h2 className="section-title">About Me</h2>
+          <div className="section-header">
+            <span className="section-marker">01 / about</span>
+            <h2 className="section-title">About Me</h2>
+          </div>
           <div className="about-content">
             <div className="about-text">
               <p>
@@ -247,7 +265,10 @@ function App() {
       {/* Education Section */}
       <section id="education" className="education">
         <div className="container">
-          <h2 className="section-title">Education</h2>
+          <div className="section-header">
+            <span className="section-marker">02 / education</span>
+            <h2 className="section-title">Education</h2>
+          </div>
           <div className="education-content">
             <div className="education-item">
               <div className="education-header">
@@ -331,7 +352,10 @@ function App() {
       {/* Experience Section */}
       <section id="experience" className="experience">
         <div className="container">
-          <h2 className="section-title">Experience</h2>
+          <div className="section-header">
+            <span className="section-marker">03 / experience</span>
+            <h2 className="section-title">Experience</h2>
+          </div>
           <div className="experience-content">
             <div className="experience-item">
               <div className="experience-header">
@@ -402,7 +426,10 @@ function App() {
       {/* Skills Section */}
       <section id="skills" className="skills">
         <div className="container">
-          <h2 className="section-title">Technical Skills</h2>
+          <div className="section-header">
+            <span className="section-marker">04 / skills</span>
+            <h2 className="section-title">Technical Skills</h2>
+          </div>
           <div className="skills-grid">
             <div className="skill-category">
               <h3>Programming Languages</h3>
@@ -484,7 +511,10 @@ function App() {
       {/* Achievements Section */}
       <section id="achievements" className="achievements">
         <div className="container">
-          <h2 className="section-title">Achievements & Awards</h2>
+          <div className="section-header">
+            <span className="section-marker">05 / achievements</span>
+            <h2 className="section-title">Achievements & Awards</h2>
+          </div>
           <div className="achievements-grid">
             <div className="achievement-item">
               <div className="achievement-icon">🏆</div>
@@ -525,7 +555,10 @@ function App() {
       {/* Projects Section */}
       <section id="projects" className="projects">
         <div className="container">
-          <h2 className="section-title">Application Portfolio (Projects)</h2>
+          <div className="section-header">
+            <span className="section-marker">06 / projects</span>
+            <h2 className="section-title">Application Portfolio (Projects)</h2>
+          </div>
           <div className="projects-grid">
             <div className="project-card">
               <div className="project-image">
@@ -625,7 +658,10 @@ function App() {
       {/* Contact Section */}
       <section id="contact" className="contact">
         <div className="container">
-          <h2 className="section-title">Get In Touch</h2>
+          <div className="section-header">
+            <span className="section-marker">07 / contact</span>
+            <h2 className="section-title">Get In Touch</h2>
+          </div>
           <div className="contact-content">
             <div className="contact-info">
               <h3>Let's connect!</h3>
@@ -672,13 +708,27 @@ function App() {
             <div className="contact-form">
               <form>
                 <div className="form-group">
-                  <input type="text" placeholder="Your Name" required />
+                  <label htmlFor="contact-name">Name</label>
+                  <input
+                    id="contact-name"
+                    type="text"
+                    placeholder="Your Name"
+                    required
+                  />
                 </div>
                 <div className="form-group">
-                  <input type="email" placeholder="Your Email" required />
+                  <label htmlFor="contact-email">Email</label>
+                  <input
+                    id="contact-email"
+                    type="email"
+                    placeholder="Your Email"
+                    required
+                  />
                 </div>
                 <div className="form-group">
+                  <label htmlFor="contact-message">Message</label>
                   <textarea
+                    id="contact-message"
                     placeholder="Your Message"
                     rows="5"
                     required
