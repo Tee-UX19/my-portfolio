@@ -3,11 +3,14 @@ import LoadingScreen from "./components/LoadingScreen";
 import ParticleBackground from "./components/ParticleBackground";
 import "./App.css";
 
+const WEB3FORMS_ACCESS_KEY = "726b7bf7-32b6-40f1-b6d1-ef7b71186a42";
+
 function App() {
   const [isLoading, setIsLoading] = useState(true);
   const [isVisible, setIsVisible] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [formStatus, setFormStatus] = useState("idle");
 
   useEffect(() => {
     if (!isLoading) {
@@ -59,6 +62,29 @@ function App() {
 
   const handleLoadingComplete = () => {
     setIsLoading(false);
+  };
+
+  const handleContactSubmit = async (event) => {
+    event.preventDefault();
+    setFormStatus("sending");
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { Accept: "application/json" },
+        body: new FormData(event.target),
+      });
+      const result = await response.json();
+
+      if (result.success) {
+        setFormStatus("success");
+        event.target.reset();
+      } else {
+        setFormStatus("error");
+      }
+    } catch {
+      setFormStatus("error");
+    }
   };
 
   if (isLoading) {
@@ -600,13 +626,29 @@ function App() {
               </div>
             </div>
             <div className="contact-form">
-              <form>
+              <form onSubmit={handleContactSubmit}>
+                <input
+                  type="hidden"
+                  name="access_key"
+                  value={WEB3FORMS_ACCESS_KEY}
+                />
+                <input type="hidden" name="subject" value="New message from portfolio contact form" />
+                <input
+                  type="checkbox"
+                  name="botcheck"
+                  className="form-honeypot"
+                  tabIndex="-1"
+                  autoComplete="off"
+                  aria-hidden="true"
+                />
                 <div className="form-group">
                   <label htmlFor="contact-name">Name</label>
                   <input
                     id="contact-name"
+                    name="name"
                     type="text"
                     placeholder="Your Name"
+                    disabled={formStatus === "sending"}
                     required
                   />
                 </div>
@@ -614,8 +656,10 @@ function App() {
                   <label htmlFor="contact-email">Email</label>
                   <input
                     id="contact-email"
+                    name="email"
                     type="email"
                     placeholder="Your Email"
+                    disabled={formStatus === "sending"}
                     required
                   />
                 </div>
@@ -623,14 +667,31 @@ function App() {
                   <label htmlFor="contact-message">Message</label>
                   <textarea
                     id="contact-message"
+                    name="message"
                     placeholder="Your Message"
                     rows="5"
+                    disabled={formStatus === "sending"}
                     required
                   ></textarea>
                 </div>
-                <button type="submit" className="btn-primary">
-                  Send Message
+                <button
+                  type="submit"
+                  className="btn-primary"
+                  disabled={formStatus === "sending"}
+                >
+                  {formStatus === "sending" ? "Sending…" : "Send Message"}
                 </button>
+                {formStatus === "success" && (
+                  <p className="form-status form-status-success">
+                    Message sent — thanks, I'll get back to you soon.
+                  </p>
+                )}
+                {formStatus === "error" && (
+                  <p className="form-status form-status-error">
+                    Something went wrong — email me directly at{" "}
+                    tj.godwin1904@gmail.com instead.
+                  </p>
+                )}
               </form>
             </div>
           </div>
