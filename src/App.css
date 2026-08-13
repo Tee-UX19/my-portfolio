@@ -718,7 +718,6 @@ section {
   color: var(--color-text-muted);
   margin-bottom: 1.5rem;
   line-height: 1.6;
-  flex: 1;
 }
 
 .project-tech {

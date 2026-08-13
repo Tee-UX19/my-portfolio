@@ -253,8 +253,9 @@ function App() {
               </p>
               <p>
                 I build production data pipelines, distributed processing
-                systems, and full-stack web apps. Currently open to
-                software engineering and other tech roles.
+                systems, and full-stack web apps. Currently, I'm working on
+                AI/ML projects and learning DevOps through AWS certification
+                courses.
               </p>
               <div className="stats">
                 <div className="stat-item">
@@ -582,7 +583,7 @@ function App() {
             <div className="contact-info">
               <h3>Let's connect!</h3>
               <p>
-                Again, I'm open to software engineering and any tech roles. Feel
+                I'm open to software engineering and any tech roles. Feel
                 free to reach out if you'd like to talk about an opportunity
                 or a project.
               </p>
