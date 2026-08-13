@@ -20,8 +20,6 @@ function App() {
         "education",
         "experience",
         "skills",
-        "languages",
-        "achievements",
         "projects",
         "contact",
       ];
@@ -135,15 +133,6 @@ function App() {
             </li>
             <li>
               <a
-                href="#achievements"
-                onClick={() => scrollToSection("achievements")}
-                className={activeSection === "achievements" ? "active" : ""}
-              >
-                Achievements
-              </a>
-            </li>
-            <li>
-              <a
                 href="#projects"
                 onClick={() => scrollToSection("projects")}
                 className={activeSection === "projects" ? "active" : ""}
@@ -175,12 +164,12 @@ function App() {
               <span className="accent-text">Godwin</span>
             </h1>
             <p className="hero-subtitle">
-              Computer Science Student & Aspiring Software Engineer
+              Software Engineer — Data Engineering &amp; Full-Stack Development
             </p>
             <p className="hero-description">
-              M.Eng Computer Science student at University of Birmingham,
-              passionate about software engineering and building innovative
-              applications
+              M.Eng Computer Science with Software Engineering, University of
+              Birmingham (final year). Currently looking for software
+              engineering roles.
             </p>
             <div className="hero-buttons">
               <button
@@ -226,37 +215,40 @@ function App() {
         <div className="container">
           <div className="section-header">
             <span className="section-marker">01 / about</span>
-            <h2 className="section-title">About Me</h2>
+            <h2 className="section-title">About</h2>
           </div>
           <div className="about-content">
             <div className="about-text">
               <p>
-                I'm pursuing an M.Eng in Computer Science with Software
-                Engineering at the University of Birmingham, having achieved a
-                72% in my first year. My journey includes international study
-                experiences and strong academic foundations in mathematics and
-                sciences.
+                Software engineer focused on data engineering and full-stack
+                development. I'm in my final year of an M.Eng in Computer
+                Science with Software Engineering at the University of
+                Birmingham.
               </p>
               <p>
-                I enjoy learning new technologies and applying theoretical
-                knowledge to practical projects. I'm particularly interested in
-                full-stack development, artificial intelligence, and creating
-                user-friendly applications that solve real-world problems.
+                I build production data pipelines, distributed processing
+                systems, and full-stack web apps — with a bias toward
+                reliability and things that actually ship. Currently looking
+                for software engineering roles.
               </p>
               <div className="stats">
                 <div className="stat-item">
-                  <span className="stat-number">72%</span>
-                  <span className="stat-label">Year 1 Average</span>
+                  <span className="stat-number">73%</span>
+                  <span className="stat-label">Third Year Average</span>
                 </div>
                 <div className="stat-item">
-                  <span className="stat-number">M.Eng</span>
-                  <span className="stat-label">Computer Science</span>
+                  <span className="stat-number">3.9/4.25</span>
+                  <span className="stat-label">GPA · Expected First</span>
                 </div>
                 <div className="stat-item">
-                  <span className="stat-number">97th</span>
-                  <span className="stat-label">SAT Percentile</span>
+                  <span className="stat-number">Final Year</span>
+                  <span className="stat-label">M.Eng Computer Science</span>
                 </div>
               </div>
+              <p className="about-award">
+                <span className="award-label">Award</span>
+                2023/24 UG Outstanding Achievement Award (SRM Funded)
+              </p>
             </div>
           </div>
         </div>
@@ -273,30 +265,28 @@ function App() {
             <div className="education-item">
               <div className="education-header">
                 <h3>M.Eng Computer Science with Software Engineering</h3>
-                <span className="education-period">2023 - Present</span>
+                <span className="education-period">Sept 2023 – Present</span>
               </div>
               <div className="education-details">
                 <p className="education-institution">
-                  University of Birmingham
+                  University of Birmingham · Birmingham, UK
                 </p>
                 <div className="education-achievement">
                   <span className="grade-highlight">
-                    GPA: 3.9/4.25 • Expected First Class
+                    GPA: 3.9/4.25 • Expected First Class • Final Year
                   </span>
                 </div>
-                <p className="education-description">
-                  Master of Engineering programme combining theoretical computer
-                  science with practical software engineering applications.
-                </p>
                 <div className="coursework">
-                  <span className="course-tag">Full Stack App Development</span>
+                  <span className="course-tag">Data Structures &amp; Algorithms</span>
+                  <span className="course-tag">Object Oriented Programming</span>
                   <span className="course-tag">
-                    Object Oriented Programming
+                    Software Engineering &amp; Professional Practices
                   </span>
-                  <span className="course-tag">Data Structures</span>
-                  <span className="course-tag">Software Engineering</span>
-                  <span className="course-tag">Functional Programming</span>
+                  <span className="course-tag">Team Project</span>
                   <span className="course-tag">Artificial Intelligence</span>
+                  <span className="course-tag">
+                    Operating Systems &amp; Systems Programming
+                  </span>
                 </div>
               </div>
             </div>
@@ -304,44 +294,16 @@ function App() {
             <div className="education-item">
               <div className="education-header">
                 <h3>Foundation Certificate in Science and Engineering</h3>
-                <span className="education-period">2023</span>
+                <span className="education-period">Jan 2023 – June 2023</span>
               </div>
               <div className="education-details">
                 <p className="education-institution">
-                  Kaplan International College, London
+                  Kaplan International College, London · London, UK
                 </p>
-                <div className="education-achievement">
-                  <span className="grade-highlight">
-                    Average: 85% • Mathematics: 90% • IT: 88% • Extended Project: 72%
-                  </span>
-                </div>
-                <p className="education-description">
-                  Preparatory programme providing foundation knowledge for
-                  engineering and computer science studies.
-                </p>
-              </div>
-            </div>
-
-            <div className="education-item">
-              <div className="education-header">
-                <h3>IGCSE & Additional Qualifications</h3>
-                <span className="education-period">2016 - 2022</span>
-              </div>
-              <div className="education-details">
-                <p className="education-institution">
-                  British Spring College, Awka
-                </p>
-                <div className="education-achievement">
-                  <span className="grade-highlight">
-                    5 A*/A Grades • SAT: 1390 (97th percentile) • IELTS: 8/9
-                  </span>
-                </div>
                 <div className="coursework">
-                  <span className="course-tag">Mathematics A*</span>
-                  <span className="course-tag">Biology A*</span>
-                  <span className="course-tag">Chemistry A*</span>
-                  <span className="course-tag">Physics A*</span>
-                  <span className="course-tag">English A</span>
+                  <span className="course-tag">Mathematics</span>
+                  <span className="course-tag">Information Technology</span>
+                  <span className="course-tag">Extended Project (Research)</span>
                 </div>
               </div>
             </div>
@@ -381,12 +343,11 @@ function App() {
                 <div className="experience-tech">
                   <span className="tech-tag">Python</span>
                   <span className="tech-tag">Apache Spark</span>
-                  <span className="tech-tag">PySpark</span>
                   <span className="tech-tag">GCP</span>
                   <span className="tech-tag">BigQuery</span>
-                  <span className="tech-tag">Apache Airflow</span>
-                  <span className="tech-tag">ETL Pipelines</span>
                   <span className="tech-tag">Dataproc</span>
+                  <span className="tech-tag">Apache Airflow</span>
+                  <span className="tech-tag">Parquet</span>
                 </div>
               </div>
             </div>
@@ -400,22 +361,20 @@ function App() {
                 <p className="experience-company">Uptrail, London, UK</p>
                 <ul className="experience-achievements">
                   <li>
-                    Cleaned and analysed 2,992 sales records across 499 customers to identify top loyalty tiers and delivery optimisation opportunities (41% delay reduction potential) through 6 data visualisations and strategic analysis
+                    Analysed 2,992 sales records across 499 customers to surface loyalty and delivery-optimisation opportunities (41% delay-reduction potential)
                   </li>
                   <li>
-                    Developed Scikit-learn logistic regression model on 1,494 streaming customers achieving 76.6% accuracy, identifying mobile usage and geographic patterns as key churn drivers for targeted retention strategies
+                    Built a Scikit-learn logistic regression churn model (76.6% accuracy) identifying mobile usage and geography as key churn drivers
                   </li>
                   <li>
-                    Created interactive Tableau dashboard integrating 3 datasets (15,822 records) with 6 calculated KPIs, enabling executive strategic planning through geographic mapping and customer segmentation analysis
+                    Created an interactive Tableau dashboard integrating 3 datasets (15,822 records) with 6 KPIs for executive planning
                   </li>
                 </ul>
                 <div className="experience-tech">
                   <span className="tech-tag">Python</span>
-                  <span className="tech-tag">Pandas</span>
                   <span className="tech-tag">Scikit-learn</span>
+                  <span className="tech-tag">Pandas</span>
                   <span className="tech-tag">Tableau</span>
-                  <span className="tech-tag">Data Analysis</span>
-                  <span className="tech-tag">Machine Learning</span>
                 </div>
               </div>
             </div>
@@ -445,7 +404,7 @@ function App() {
               </div>
             </div>
             <div className="skill-category">
-              <h3>Data Engineering & ML</h3>
+              <h3>Data Engineering &amp; ML</h3>
               <div className="skill-items">
                 <span className="skill-tag">PySpark</span>
                 <span className="skill-tag">Apache Spark</span>
@@ -462,91 +421,21 @@ function App() {
                 <span className="skill-tag">React</span>
                 <span className="skill-tag">Angular</span>
                 <span className="skill-tag">Spring Boot</span>
-                <span className="skill-tag">HTML/CSS</span>
-                <span className="skill-tag">Bootstrap</span>
-                <span className="skill-tag">Express.js</span>
                 <span className="skill-tag">Node.js</span>
+                <span className="skill-tag">Express.js</span>
                 <span className="skill-tag">REST APIs</span>
               </div>
             </div>
             <div className="skill-category">
-              <h3>Cloud & Databases</h3>
+              <h3>Cloud &amp; Infra</h3>
               <div className="skill-items">
-                <span className="skill-tag">BigQuery</span>
-                <span className="skill-tag">Apache Airflow</span>
                 <span className="skill-tag">GCP</span>
                 <span className="skill-tag">AWS</span>
                 <span className="skill-tag">Azure</span>
                 <span className="skill-tag">Docker</span>
-                <span className="skill-tag">PostgreSQL</span>
-                <span className="skill-tag">GitHub</span>
+                <span className="skill-tag">GitHub Actions</span>
+                <span className="skill-tag">Apache Airflow</span>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Languages & Interests Section - Combined */}
-      <section id="languages" className="languages-interests-compact">
-        <div className="container">
-          <div className="compact-grid">
-            <div className="compact-item">
-              <h3 className="compact-title">Languages</h3>
-              <p className="compact-content">
-                <span className="highlight-text">English</span> (C1 - IELTS 8/9) •
-                <span className="highlight-text"> Igbo</span> (Native) •
-                <span className="highlight-text"> Spanish</span> (A1)
-              </p>
-            </div>
-            <div className="compact-item">
-              <h3 className="compact-title">Interests</h3>
-              <p className="compact-content">
-                Football • AI/ML • App Development • Language Learning
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Achievements Section */}
-      <section id="achievements" className="achievements">
-        <div className="container">
-          <div className="section-header">
-            <span className="section-marker">05 / achievements</span>
-            <h2 className="section-title">Achievements & Awards</h2>
-          </div>
-          <div className="achievements-grid">
-            <div className="achievement-item">
-              <div className="achievement-icon">🏆</div>
-              <h3>UG Outstanding Achievement Award</h3>
-              <p className="achievement-year">2023/24</p>
-              <p className="achievement-description">
-                Recognized for outstanding academic performance in Computer Science with Software Engineering (SRM Funded)
-              </p>
-            </div>
-            <div className="achievement-item">
-              <div className="achievement-icon">🥈</div>
-              <h3>Silver Medallist - Physics Olympiad</h3>
-              <p className="achievement-year">State Level</p>
-              <p className="achievement-description">
-                Achieved silver medal in competitive state-level Physics Olympiad competition
-              </p>
-            </div>
-            <div className="achievement-item">
-              <div className="achievement-icon">🥈</div>
-              <h3>Silver Medallist - Mathematics Olympiad</h3>
-              <p className="achievement-year">State Level</p>
-              <p className="achievement-description">
-                Achieved silver medal in competitive state-level Mathematics Olympiad competition
-              </p>
-            </div>
-            <div className="achievement-item">
-              <div className="achievement-icon">⭐</div>
-              <h3>Top 3 Graduating Student</h3>
-              <p className="achievement-year">British Spring College</p>
-              <p className="achievement-description">
-                Graduated among top 3 students in the class with distinction in Further Mathematics
-              </p>
             </div>
           </div>
         </div>
@@ -556,72 +445,10 @@ function App() {
       <section id="projects" className="projects">
         <div className="container">
           <div className="section-header">
-            <span className="section-marker">06 / projects</span>
-            <h2 className="section-title">Application Portfolio (Projects)</h2>
+            <span className="section-marker">05 / projects</span>
+            <h2 className="section-title">Projects</h2>
           </div>
           <div className="projects-grid">
-            <div className="project-card">
-              <div className="project-image">
-                <div className="project-placeholder">
-                  <span>Grocery App</span>
-                </div>
-              </div>
-              <div className="project-content">
-                <h3>Grocery App Prototype</h3>
-                <p>
-                  Collaborated as a team to create a shared grocery shopping app
-                  using React and Bootstrap for the frontend with Express for
-                  the backend. Implemented version control and CI/CD using
-                  GitHub and GitHub Actions.
-                </p>
-                <div className="project-tech">
-                  <span>React</span>
-                  <span>Bootstrap</span>
-                  <span>Express</span>
-                  <span>GitHub Actions</span>
-                  <span>CI/CD</span>
-                </div>
-                <div className="project-links">
-                  <a href="#" className="project-link">
-                    GitHub
-                  </a>
-                  <a href="#" className="project-link">
-                    Documentation
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div className="project-card">
-              <div className="project-image">
-                <div className="project-placeholder">
-                  <span>Network Security</span>
-                </div>
-              </div>
-              <div className="project-content">
-                <h3>Network Firewall Program</h3>
-                <p>
-                  Designed multithreaded firewall server using pthreads with mutex synchronization, supporting concurrent client connections and dual-mode operation (interactive CLI and IPv6 network server). Implemented rule management system with linked-list data structures for Add/Delete/List/Check operations on IP range and port range filtering rules. Engineered advanced IP validation using inet_pton() and network byte order conversions, enabling precise IP range matching and connection acceptance/rejection decisions.
-                </p>
-                <div className="project-tech">
-                  <span>C</span>
-                  <span>Pthreads</span>
-                  <span>Networking</span>
-                  <span>IPv6</span>
-                  <span>System Programming</span>
-                  <span>Data Structures</span>
-                </div>
-                <div className="project-links">
-                  <a href="#" className="project-link">
-                    GitHub
-                  </a>
-                  <a href="#" className="project-link">
-                    Report
-                  </a>
-                </div>
-              </div>
-            </div>
-
             <div className="project-card">
               <div className="project-image">
                 <div className="project-placeholder">
@@ -629,25 +456,71 @@ function App() {
                 </div>
               </div>
               <div className="project-content">
-                <h3>Campus Events App</h3>
+                <h3>Campus Events Web Application</h3>
                 <p>
-                  Developed a full-stack web application for university students to discover and review campus events and societies as part of a 7-member team. Led CI/CD pipeline implementation using Azure for deployment, Docker containerization, and GitHub Actions runners. Enhanced user experience by developing responsive design for mobile screen sizes and other accessibility features. Architected RESTful APIs with Spring Boot and resolved database migration issues using Liquibase.
+                  Full-stack web app for university students to discover and
+                  review campus events and societies, built with a 7-member
+                  Agile team.
                 </p>
+                <ul className="experience-achievements">
+                  <li>
+                    Owned DevOps: set up the Azure VM, configured GitHub
+                    Actions runners, served as repo admin, and tagged commits
+                    to deployment versions
+                  </li>
+                  <li>
+                    Handled database migrations (Liquibase/XML) and resolved
+                    migration issues
+                  </li>
+                  <li>
+                    Built the backend and frontend for my own JDL entity
+                    (Tags) end-to-end
+                  </li>
+                </ul>
                 <div className="project-tech">
                   <span>JHipster</span>
-                  <span>Spring Boot</span>
                   <span>Angular</span>
+                  <span>Spring Boot</span>
                   <span>PostgreSQL</span>
-                  <span>Azure</span>
                   <span>Docker</span>
+                  <span>Azure</span>
+                  <span>GitHub Actions</span>
                 </div>
-                <div className="project-links">
-                  <a href="#" className="project-link">
-                    Live Demo
-                  </a>
-                  <a href="#" className="project-link">
-                    GitHub
-                  </a>
+              </div>
+            </div>
+
+            <div className="project-card">
+              <div className="project-image">
+                <div className="project-placeholder">
+                  <span>Network Firewall</span>
+                </div>
+              </div>
+              <div className="project-content">
+                <h3>Network Firewall Program</h3>
+                <p>
+                  Multithreaded firewall server in C, built to explore
+                  concurrent systems programming and low-level networking.
+                </p>
+                <ul className="experience-achievements">
+                  <li>
+                    Built a multithreaded firewall server using pthreads with
+                    mutex synchronisation, supporting concurrent clients and
+                    dual-mode operation (interactive CLI + IPv6 network
+                    server)
+                  </li>
+                  <li>
+                    Implemented a linked-list rule engine for Add/Delete/List/Check
+                    on IP and port filtering
+                  </li>
+                  <li>
+                    Wrote IP validation with inet_pton() and byte conversions
+                    for precise range matching
+                  </li>
+                </ul>
+                <div className="project-tech">
+                  <span>C</span>
+                  <span>pthreads</span>
+                  <span>Networking</span>
                 </div>
               </div>
             </div>
@@ -659,49 +532,57 @@ function App() {
       <section id="contact" className="contact">
         <div className="container">
           <div className="section-header">
-            <span className="section-marker">07 / contact</span>
+            <span className="section-marker">06 / contact</span>
             <h2 className="section-title">Get In Touch</h2>
           </div>
           <div className="contact-content">
             <div className="contact-info">
               <h3>Let's connect!</h3>
               <p>
-                I'm always eager to learn from others and discuss technology,
-                programming, or potential collaboration opportunities. Feel free
-                to reach out if you'd like to connect!
+                I'm looking for software engineering roles — feel free to
+                reach out if you'd like to talk about an opportunity or a
+                project.
               </p>
               <div className="contact-links">
                 <a
                   href="mailto:tj.godwin1904@gmail.com"
                   className="contact-link"
                 >
-                  <span>📧</span>
+                  <span>Email</span>
                   tj.godwin1904@gmail.com
                 </a>
                 <a
                   href="tel:+447961585772"
                   className="contact-link"
                 >
-                  <span>📱</span>
+                  <span>Phone</span>
                   +44 7961 585 772
                 </a>
                 <a
-                  href="http://www.linkedin.com/in/timothy-joseph-godwin-0b4bb2292"
+                  href="https://linkedin.com/in/timothy-joseph-godwin"
                   className="contact-link"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <span>💼</span>
-                  LinkedIn Profile
+                  <span>LinkedIn</span>
+                  timothy-joseph-godwin
                 </a>
                 <a
-                  href="https://github.com/Tee-UX19/Tee-UX19"
+                  href="https://github.com/Tee-UX19"
                   className="contact-link"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <span>🔗</span>
-                  GitHub Profile
+                  <span>GitHub</span>
+                  Tee-UX19
+                </a>
+                <a
+                  href="/Timothy-Joseph CV.pdf"
+                  download="Timothy-Joseph-Godwin-CV.pdf"
+                  className="contact-link"
+                >
+                  <span>Résumé</span>
+                  Download CV (PDF)
                 </a>
               </div>
             </div>
@@ -746,7 +627,7 @@ function App() {
       {/* Footer */}
       <footer className="footer">
         <div className="container">
-          <p>&copy; 2025 Timothy Joseph Godwin. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Timothy-Joseph Godwin. All rights reserved.</p>
         </div>
       </footer>
     </div>

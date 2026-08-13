@@ -387,6 +387,30 @@ section {
   margin-top: 0.5rem;
 }
 
+.about-award {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0 !important;
+  font-size: 0.95rem !important;
+  color: var(--color-text) !important;
+}
+
+.award-label {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--color-accent);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border: 1px solid var(--color-accent-border);
+  background: var(--color-accent-soft);
+  padding: 0.25rem 0.6rem;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
 /* Education Section */
 .education-content {
   max-width: 900px;
@@ -547,12 +571,6 @@ section {
   font-weight: 500;
 }
 
-.education-description {
-  color: var(--color-text-muted);
-  line-height: 1.6;
-  margin-bottom: 1.5rem;
-}
-
 .education-achievement {
   margin-bottom: 1rem;
 }
@@ -641,55 +659,6 @@ section {
   border-color: var(--color-accent);
 }
 
-/* Languages & Interests Compact Section */
-.languages-interests-compact {
-  background: var(--color-surface);
-  border-top: 1px solid var(--color-border);
-  border-bottom: 1px solid var(--color-border);
-  padding: 3rem 0;
-}
-
-.compact-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  max-width: 900px;
-}
-
-.compact-item {
-  background: var(--color-bg);
-  padding: 1.5rem 1.75rem;
-  border-radius: 8px;
-  border: 1px solid var(--color-border);
-  transition: border-color 0.2s ease;
-}
-
-.compact-item:hover {
-  border-color: var(--color-accent);
-}
-
-.compact-title {
-  font-family: var(--font-mono);
-  font-size: 0.95rem;
-  color: var(--color-accent);
-  margin-bottom: 0.7rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-}
-
-.compact-content {
-  color: var(--color-text-muted);
-  font-size: 1rem;
-  line-height: 1.8;
-  margin: 0;
-}
-
-.highlight-text {
-  color: var(--color-text);
-  font-weight: 600;
-}
-
 /* Projects Section */
 .projects-grid {
   display: grid;
@@ -769,24 +738,6 @@ section {
   border: 1px solid var(--color-accent-border);
 }
 
-.project-links {
-  display: flex;
-  gap: 1rem;
-}
-
-.project-link {
-  font-family: var(--font-mono);
-  color: var(--color-text);
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 0.9rem;
-  transition: color 0.2s ease;
-}
-
-.project-link:hover {
-  color: var(--color-accent);
-}
-
 /* Contact Section */
 .contact-content {
   display: grid;
@@ -831,6 +782,16 @@ section {
 .contact-link:hover {
   color: var(--color-accent);
   border-color: var(--color-accent);
+}
+
+.contact-link span {
+  color: currentColor;
+  opacity: 0.55;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.7rem;
+  min-width: 60px;
+  flex-shrink: 0;
 }
 
 .contact-form {
@@ -1012,11 +973,6 @@ section {
 
   .skills-grid {
     grid-template-columns: 1fr;
-  }
-
-  .compact-grid {
-    grid-template-columns: 1fr;
-    gap: 1.25rem;
   }
 
   .projects-grid {
