@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import LoadingScreen from "./components/LoadingScreen";
 import ParticleBackground from "./components/ParticleBackground";
 import "./App.css";
+import { Analytics } from "@vercel/analytics/react"
 
 const WEB3FORMS_ACCESS_KEY = "726b7bf7-32b6-40f1-b6d1-ef7b71186a42";
 
@@ -94,6 +95,7 @@ function App() {
   return (
     <div className="App">
       <ParticleBackground />
+      <Analytics />
 
       {/* Navigation */}
       <nav className="navbar">
