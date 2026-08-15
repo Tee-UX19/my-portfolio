@@ -265,7 +265,7 @@ function App() {
                   <span className="stat-label">Third Year Average</span>
                 </div>
                 <div className="stat-item">
-                  <span className="stat-number">3.9/4.25</span>
+                  <span className="stat-number">4.0/4.25</span>
                   <span className="stat-label">GPA · Expected First</span>
                 </div>
                 <div className="stat-item">
@@ -301,7 +301,7 @@ function App() {
                 </p>
                 <div className="education-achievement">
                   <span className="grade-highlight">
-                    GPA: 3.9/4.25 • Expected First Class • Final Year
+                    GPA: 4.0/4.25 • Expected First Class • Final Year
                   </span>
                 </div>
                 <div className="coursework">
