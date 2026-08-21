@@ -306,15 +306,13 @@ function App() {
                 </div>
                 <div className="coursework">
                   <span className="course-tag">Data Structures &amp; Algorithms</span>
-                  <span className="course-tag">Object Oriented Programming</span>
-                  <span className="course-tag">
-                    Software Engineering &amp; Professional Practices
-                  </span>
-                  <span className="course-tag">Team Project</span>
-                  <span className="course-tag">Artificial Intelligence</span>
                   <span className="course-tag">
                     Operating Systems &amp; Systems Programming
                   </span>
+                  <span className="course-tag">Machine Learning</span>
+                  <span className="course-tag">Neural Computation</span>
+                  <span className="course-tag">Natural Language Processing</span>
+                  <span className="course-tag">Intelligent Software Engineering</span>
                 </div>
               </div>
             </div>
