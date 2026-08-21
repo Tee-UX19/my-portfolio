@@ -313,6 +313,7 @@ function App() {
                   <span className="course-tag">Neural Computation</span>
                   <span className="course-tag">Natural Language Processing</span>
                   <span className="course-tag">Intelligent Software Engineering</span>
+                  <span className="course-tag">Team Project</span>
                 </div>
               </div>
             </div>
