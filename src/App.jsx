@@ -255,22 +255,22 @@ function App() {
               </p>
               <p>
                 I build production data pipelines, distributed processing
-                systems, and full-stack web apps. Currently, I'm working on
-                AI/ML projects and learning DevOps through AWS certification
-                courses.
+                systems, and full-stack web apps. Currently building AI tools,
+                including a RAG study tool for lecture notes, and
+                studying for the AWS Cloud Practitioner certification.
               </p>
               <div className="stats">
                 <div className="stat-item">
-                  <span className="stat-number">73%</span>
+                  <span className="stat-number">71.3%</span>
+                  <span className="stat-label">Weighted Average to Date</span>
+                </div>
+                <div className="stat-item">
+                  <span className="stat-number">73.2%</span>
                   <span className="stat-label">Third Year Average</span>
                 </div>
                 <div className="stat-item">
                   <span className="stat-number">4.0/4.25</span>
                   <span className="stat-label">GPA · Expected First</span>
-                </div>
-                <div className="stat-item">
-                  <span className="stat-number">Final Year</span>
-                  <span className="stat-label">M.Eng Computer Science</span>
                 </div>
               </div>
               <p className="about-award">
@@ -293,7 +293,7 @@ function App() {
             <div className="education-item">
               <div className="education-header">
                 <h3>M.Eng Computer Science with Software Engineering</h3>
-                <span className="education-period">Sept 2023 – Present</span>
+                <span className="education-period">Sep 2023 – Present</span>
               </div>
               <div className="education-details">
                 <p className="education-institution">
@@ -301,7 +301,7 @@ function App() {
                 </p>
                 <div className="education-achievement">
                   <span className="grade-highlight">
-                    GPA: 4.0/4.25 • Expected First Class • Final Year
+                    Weighted Average: 71.3% • GPA: 4.0/4.25 • Expected First Class • Final Year
                   </span>
                 </div>
                 <div className="coursework">
@@ -321,7 +321,7 @@ function App() {
             <div className="education-item">
               <div className="education-header">
                 <h3>Foundation Certificate in Science and Engineering</h3>
-                <span className="education-period">Jan 2023 – June 2023</span>
+                <span className="education-period">Jan 2023 – Jun 2023</span>
               </div>
               <div className="education-details">
                 <p className="education-institution">
@@ -354,13 +354,13 @@ function App() {
             <div className="experience-item">
               <div className="experience-header">
                 <h3>Data Engineering Intern</h3>
-                <span className="experience-period">Sept 2025 – Oct 2025</span>
+                <span className="experience-period">Sep 2025 – Oct 2025</span>
               </div>
               <div className="experience-details">
                 <p className="experience-company">London Success Academy, London, UK</p>
                 <ul className="experience-achievements">
                   <li>
-                    Built enterprise-scale ETL pipeline processing 300,000+ records using Python, Apache Spark, and GCP, achieving 80% storage optimisation through Parquet format with real-time API integration
+                    Built an ETL pipeline processing 300,000+ records using Python, Apache Spark, and GCP, achieving 80% storage optimisation through Parquet format with real-time API integration
                   </li>
                   <li>
                     Orchestrated production data workflows using Apache Airflow on Google Cloud Composer with automated scheduling, BigQuery metadata tracking, and data validation ensuring 99%+ pipeline reliability
@@ -387,7 +387,7 @@ function App() {
             <div className="experience-item">
               <div className="experience-header">
                 <h3>Data Analysis Intern</h3>
-                <span className="experience-period">July 2025 – Aug 2025</span>
+                <span className="experience-period">Jul 2025 – Aug 2025</span>
               </div>
               <div className="experience-details">
                 <p className="experience-company">Uptrail, London, UK</p>
@@ -399,7 +399,7 @@ function App() {
                     Built a Scikit-learn logistic regression churn model (76.6% accuracy) identifying mobile usage and geography as key churn drivers
                   </li>
                   <li>
-                    Created an interactive Tableau dashboard integrating 3 datasets (15,822 records) with 6 KPIs for executive planning
+                    Created an interactive Tableau dashboard integrating 3 datasets (15,822 records) with 6 KPIs, geographic mapping and customer segmentation
                   </li>
                 </ul>
                 <div className="experience-tech">
@@ -431,7 +431,6 @@ function App() {
                 <span className="skill-tag">JavaScript</span>
                 <span className="skill-tag">TypeScript</span>
                 <span className="skill-tag">C</span>
-                <span className="skill-tag">Haskell</span>
                 <span className="skill-tag">PowerShell</span>
               </div>
             </div>
@@ -445,6 +444,8 @@ function App() {
                 <span className="skill-tag">Scikit-learn</span>
                 <span className="skill-tag">Tableau</span>
                 <span className="skill-tag">ETL Pipelines</span>
+                <span className="skill-tag">RAG / LLMs</span>
+                <span className="skill-tag">ChromaDB</span>
               </div>
             </div>
             <div className="skill-category">
@@ -453,6 +454,7 @@ function App() {
                 <span className="skill-tag">React</span>
                 <span className="skill-tag">Angular</span>
                 <span className="skill-tag">Spring Boot</span>
+                <span className="skill-tag">FastAPI</span>
                 <span className="skill-tag">Node.js</span>
                 <span className="skill-tag">Express.js</span>
                 <span className="skill-tag">REST APIs</span>
@@ -484,6 +486,54 @@ function App() {
             <div className="project-card">
               <div className="project-image">
                 <div className="project-placeholder">
+                  <span>RAG Study Tool</span>
+                </div>
+              </div>
+              <div className="project-content">
+                <h3>RAG Study Tool</h3>
+                <p>
+                  Study tool for my own lecture notes, built to explore
+                  retrieval-augmented generation with LLMs.
+                </p>
+                <ul className="experience-achievements">
+                  <li>
+                    Built a retrieval-augmented generation tool that answers
+                    questions using uploaded lecture notes, with sources shown
+                    for each answer
+                  </li>
+                  <li>
+                    Implemented PDF chunking and semantic search using
+                    sentence-transformer embeddings stored in ChromaDB
+                  </li>
+                  <li>
+                    Added a similarity threshold so the tool declines to
+                    answer when no relevant content is found, reducing
+                    hallucinations
+                  </li>
+                </ul>
+                <div className="project-tech">
+                  <span>Python</span>
+                  <span>FastAPI</span>
+                  <span>ChromaDB</span>
+                  <span>Claude API</span>
+                  <span>sentence-transformers</span>
+                </div>
+                <div className="project-links">
+                  <a
+                    href="https://github.com/Tee-UX19/rag-study-tool"
+                    className="project-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    View on GitHub →
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="project-card">
+              <div className="project-image">
+                <div className="project-placeholder">
                   <span>Campus Events</span>
                 </div>
               </div>
@@ -497,8 +547,9 @@ function App() {
                 <ul className="experience-achievements">
                   <li>
                     Owned DevOps: set up the Azure VM, configured GitHub
-                    Actions runners, served as repo admin, and tagged commits
-                    to deployment versions
+                    Actions runners to automate deployment on every merge,
+                    served as repo admin, and tagged commits to deployment
+                    versions
                   </li>
                   <li>
                     Handled database migrations (Liquibase/XML) and resolved
